@@ -14,7 +14,7 @@ func main() {
 	app.Version = "1.0.0"
 	app.Name = "AVA Account Generator"
 	app.Commands = []cli.Command{
-		generate.GenerateCommand,
+		generate.GenAccountsAndTxsCommand,
 	}
 	err := app.Run(os.Args)
 	if err != nil {
